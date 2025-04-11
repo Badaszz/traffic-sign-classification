@@ -21,7 +21,7 @@ for i in range(len(data)):
  
 
 #setting title
-st.title("TRAFFIC SIGN CALSSIFICATION BY BADASZ")
+st.title("TRAFFIC SIGN CLASSIFICATION BY BADASZ")
 st.markdown("Upload an image of a traffic sign")
 
 #uploading image 
@@ -46,4 +46,5 @@ if submit:
 
         st.title(str("The traffic sign is " + CLASS_NAMES[Y_pred[0]])) 
         st.title(str("You're welcome broski" ) )
+        st.balloons()
 
