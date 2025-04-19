@@ -32,6 +32,9 @@ if submit:
     if traffic_sign_image is not None:
         #read image
         traffic_sign_image = Image.open(traffic_sign_image)
+        #display image
+        st.image(traffic_sign_image, caption='Uploaded Image')
+        st.write("Classifying...")
 
         #resize and convert image into a numpy array
         traffic_sign_image = traffic_sign_image.resize((32,32))
